@@ -8,6 +8,9 @@ return {
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
       }
+      lint.linters_by_ft['python'] = { 'ruff', 'mypy' }
+      lint.linters_by_ft['c'] = { 'clangtidy' }
+      lint.linters_by_ft['cpp'] = { 'clangtidy' }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
